@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table tr:nth-child(1) th:nth-child(1){
+            background-color: red;
+            color: white;
+        }
+        table tr:nth-child(1) th:nth-child(n+2){
+            background-color: yellow;
+            color: white;
+        }
+        table tr:nth-child(1) th:nth-child(7){
+            background-color: blue;
+            color: white;
+        }
+        table tr:nth-child(2) td:nth-child(1){
+            color: red;
+        }
+        table tr:nth-child(2) td:nth-child(7){
+            color: blue;
+        }
+        table tr:nth-child(n+3) td:nth-child(1){
+            color: red;
+        }
+        table tr:nth-child(n+3) td:nth-child(7){
+            color: blue;
+        }
+        sub {
+            color: black;
+            font-size: x-small;
+        }
+        table tr:nth-child(1) th{
+            border-top: none;
+        }
+        table tr:nth-child(2) {
+            border: none;
+        }
+        table tr:nth-child(n+3) td{
+            border: solid 1px gray;
+            font-size: x-large;
+        }
+        h2 {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<div style="width: 50%; margin: auto">
+    <h2>Tháng 10 - October</h2>
+    <table cellpadding="10px">
+        <tr>
+            <th>C.Nhật</th>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+            <th>Thứ 7</th>
+        </tr>
+        <tr>
+            <td>Sun</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            <td>Sat</td>
+        </tr>
+        <tr class="border">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1<sub>13</sub></td>
+            <td>2<sub>14</sub></td>
+            <td>3<sub>15</sub></td>
+        </tr>
+        <tr class="border">
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+        </tr>
+        <tr class="border">
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+        </tr>
+        <tr class="border">
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+        </tr>
+        <tr class="border">
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+            <td>4<sub>16</sub></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
