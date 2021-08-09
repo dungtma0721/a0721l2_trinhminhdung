@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="thang">
+<button onclick="tinhngay()">Tinh so ngay </button>
+<script>
+    function tinhngay() {
+    let thangso;
+    thangso = document.getElementById('thang').value;
+    switch (thangso) {
+        case 2:
+            document.write("Thang"+thangso+ "co 28 ngay");break;
+        case 1:
+            document.write("Thang"+thangso+ "co 31 ngay");break;
+        case 3:
+            document.write("Thang"+thangso+ "co 30 ngay");
+    }
+    }
+</script>
+
+
+</body>
+</html>

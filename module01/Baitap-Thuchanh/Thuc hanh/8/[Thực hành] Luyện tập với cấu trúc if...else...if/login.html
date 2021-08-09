@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bước 3: Tạo biến userName nhận giá trị nhập vào từ hộp thoại
+
+    let userName = prompt("Who's there?", '');
+    //Bước 4: Kiểm tra giá trị của userName
+
+    if (userName == 'Admin') {
+        //code vào đây
+    } else if (userName == null) {
+        alert('Canceled');
+    } else {
+        alert("I don't know you");
+    }
+    //Bước 5: Nếu userName là “Admin”. Khai báo biến pass nhận giá trị nhập vào từ hộp thoại.
+
+        let pass = prompt('Password?', '');
+    //Bước 6: Kiểm tra pass
+
+    if (pass == 'TheMaster') {
+        alert('Welcome!');
+    } else if (pass == null) {
+        alert('Canceled.');
+    } else {
+        alert('Wrong password');
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dauvao">
+<select name="" id="select1">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<select name="" id="select2">
+    <option value="a">VND</option> //thu value=c ko dc
+    <option value="b">USD</option>
+</select>
+<button onclick="doitien()">convert</button>
+<script>
+    function doitien() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let vselect1 = document.getElementById('select1').value;
+        let vselect2 = document.getElementById('select2').value;
+        if (vselect1 == vselect2) {
+            alert(giatrivao);
+        }
+        if ((vselect1 == "a")&&(vselect2 == "b")) {
+            alert(giatrivao/24000)
+        }
+        if ((vselect1 == "b")&&(vselect2 == "a")) {
+            alert(giatrivao*24000)
+        }
+    }
+    </script>
+</body>
+</html>

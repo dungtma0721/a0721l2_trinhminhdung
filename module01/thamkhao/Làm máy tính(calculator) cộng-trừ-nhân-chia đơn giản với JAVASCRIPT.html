@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>CALCULATOR</h2>
+input1 <input type="text" id="n1"><br>
+input2 <input type="text" id="n2"><br>
+pheptinh <select id="op">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select><br>
+ketqua <input type="text" id="result"><br>
+<button onclick="myFunction()">submit</button>
+<script type="text/javascript">
+    function myFunction() {
+        var a = document.getElementById('n1').value;
+        var b = document.getElementById('n2').value;
+        var ptinh = document.getElementById('op').value;
+        var kq = 0;
+        if(ptinh=="+") {
+            kq = parseInt(a) + parseInt(b);
+        } else if(ptinh=="-") {
+            kq = parseInt(a) - parseInt(b);
+        } else if(ptinh=="*") {
+            kq = parseInt(a) * parseInt(b);
+        } else if(ptinh=="/") {
+            kq = parseInt(a) / parseInt(b);
+        }
+        document.getElementById('result').value = kq;
+    }
+
+</script>
+</body>
+</html>

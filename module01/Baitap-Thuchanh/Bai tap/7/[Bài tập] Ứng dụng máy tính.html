@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>CALCULATOR</h2>
+<input type="text" id="n1">
+<input type="text" id="n2"><br>
+<button onclick="cong()">addition(+)</button>
+<button onclick="tru()">subtraction(-)</button>
+<button onclick="nhan()">multiplication(*)</button>
+<button onclick="chia()">Division(/)</button>
+<script>
+    function cong(){
+        let a = parseInt(document.getElementById("n1").value);
+        let b = parseInt(document.getElementById("n2").value);
+        alert(a+b);
+    }
+    function tru(){
+        let a = parseInt(document.getElementById("n1").value);
+        let b = parseInt(document.getElementById("n2").value);
+        alert(a-b);
+    }
+    function nhan(){
+        let a = parseInt(document.getElementById("n1").value);
+        let b = parseInt(document.getElementById("n2").value);
+        alert(a*b);
+    }
+    function chia(){
+        let a = parseInt(document.getElementById("n1").value);
+        let b = parseInt(document.getElementById("n2").value);
+        alert(a/b);
+    }
+</script>
+</body>
+</html>
