@@ -1,0 +1,31 @@
+<!-- Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra,
+ điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra_diem,thi_diem,cuoiky_diem;
+    kiemtra_diem = prompt("Nhap diem kiem tra");
+    thi_diem = prompt("Nhap so diem thi");
+    cuoiky_diem = prompt("Nhap diem cuoi ky");
+    if (kiemtra_diem >=8.5 && thi_diem>=8.5 && cuoiky_diem>=8.5) {
+        document.write("Xuat sac");
+    }
+    else if (kiemtra_diem >=7.5 && thi_diem>=7.5 && cuoiky_diem>=7.5) {
+        document.write("Gioi");
+    }
+    else if (kiemtra_diem >=6.5 && thi_diem>=6.5 && cuoiky_diem>=6.5) {
+        document.write("Kha");
+    }
+    else if (kiemtra_diem >=5 && thi_diem>=5 && cuoiky_diem>=5) {
+        document.write("Trung binh");
+    }
+    else document.write("Kem");
+
+</script>
+</body>
+</html>

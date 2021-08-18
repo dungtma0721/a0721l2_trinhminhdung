@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Javascript implementation to check
+    // if three points form a triangle
+
+    // Function to check if three
+    // points make a triangle
+    function checkTriangle(x1, y1, x2,
+                           y2, x3, y3)
+    {
+
+        // Calculation the area of
+        // triangle. We have skipped
+        // multiplication with 0.5
+        // to avoid floating point
+        // computations
+        let a = x1 * (y2 - y3)
+            + x2 * (y3 - y1)
+            + x3 * (y1 - y2);
+
+        // Condition to check if
+        // area is not equal to 0
+        if (a == 0)
+            document.write("No");
+        else
+            document.write("Yes");
+    }
+
+    // Driver Code
+    let x1 = 1, x2 = 2, x3 = 3,
+        y1 = 1, y2 = 2, y3 = 3;
+    checkTriangle(x1, y1, x2,
+        y2, x3, y3);
+
+    // This code is contributed by Mayank Tyagi
+
+</script>
+
+</body>
+</html>

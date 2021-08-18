@@ -5,23 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="thang">
-<button onclick="tinhngay()">Tinh so ngay </button>
+<form action="" method="get">
+    <input type="text" id="month">
+    <button onclick="tinhNgay()">Tinh so ngay </button>
+</form>
 <script>
-    function tinhngay() {
-    let thangso;
-    thangso = document.getElementById('thang').value;
-    switch (thangso) {
-        case 2:
-            document.write("Thang"+thangso+ "co 28 ngay");break;
-        case 1:
-            document.write("Thang"+thangso+ "co 31 ngay");break;
-        case 3:
-            document.write("Thang"+thangso+ "co 30 ngay");
+    function tinhNgay() {
+    let thangSo = document.getElementById("month").value;
+    //console.log()
+    switch (thangSo) {
+        case "2":
+            document.write("Thang " + thangSo + " co 28 ngay");
+            break;
+        case "1":
+        case "3":
+        case "5":
+        case "7":
+        case "8":
+        case "10":
+        case "12":
+            document.write("Thang " + thangSo+ " co 31 ngay");
+            break;
+        case "4":
+        case "6":
+        case "9":
+        case "11":
+            document.write("Thang "+ thangSo+ " co 30 ngay");
+            break;
+        default: {
+            alert("Vui lòng nhập tháng nhỏ hơn 12");
+            break;
+        }
+     //    document.getElementById().innerHTML=
     }
     }
 </script>
-
-
 </body>
 </html>
