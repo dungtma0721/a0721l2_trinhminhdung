@@ -1,0 +1,27 @@
+<!--Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Array(10);
+    let max = 0;
+    let k=0;
+    for (let i=0; i<a.length; i++){
+        a[i] = prompt('Nhap pan tu thu a[' + i+ ']');
+    }
+    for (let i=0; i<a.length; i++){
+        if(a[i]>max) {
+            max = a[i];
+            k=i;
+        }
+    }
+    document.write('Max cua mang la: '+ 'a['+ k+ '] = ' + max );
+
+</script>
+</body>
+</html>

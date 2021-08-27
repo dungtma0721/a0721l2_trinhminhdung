@@ -1,0 +1,26 @@
+<!--Phát triển một ứng dụng từ điển đơn giản. Ứng dụng cho phép
+tra cứu các từ tiếng Anh sang tiếng Việt. Danh sách các từ được
+lưu trữ trong các mảng-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h4> TỪ ĐIỂN ĐƠN GIẢN</h4>
+    <input type="text" id="nhap">
+    <input type="button" onclick="tra()" value="Tra từ">
+    <p id="kq"></p>
+<script>
+    let anh = ["good", "bad", "ugly", "color"];
+    let viet = ["tốt", "xấu", "tồi", "màu"];
+
+    function tra() {
+        let a = document.getElementById("nhap").value;
+        let n = anh.indexOf(a);
+        document.getElementById("kq").innerHTML = viet[n];
+    }
+</script>
+</body>
+</html>

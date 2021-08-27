@@ -1,0 +1,51 @@
+<!--Viết một chương trình JavaScript để thêm vào
+các phần tử trong một mảng và hiển thị chúng.-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+
+    <style>
+        body {padding-top:50px}
+    </style>
+</head>
+
+<body>
+    <input type="text" id="txtValue"/>
+    <input type="button" id="btnAdd" value="them" onclick="add_element_to_array();"/>
+    <input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+    <div id="result"></div>
+    <script>
+        let x = 0;
+        let array = Array();
+        function add_element_to_array() {
+            array[x] = document.getElementById("txtValue").value;
+            alert("Element: " + array[x] + " Added at index " + x);
+            //x++;
+            //document.getElementById("txtValue ").value = "";
+        }
+        // Bước 5: Xây dựng hàm display_array() để hiển thị các phần tử trong mảng
+        //
+        // Tạo biến e để lưu thẻ <hr> mỗi lần hiển thị một phần tử thẻ <hr>
+        // sử dụng để phân cách các phần tử trong mảng: var e = "<hr/>"
+        //
+        // Dùng vòng lặp for duyệt toàn bộ mảng: for (var i=0; i<array.length; i++)
+        //
+        //     Mỗi lần duyệt lấy giá trị của các phần tử cộng dồn vào biến e.
+        //     Thêm thẻ <br/> cuối mỗi lần duyệt.
+        //
+        //     Kết thúc lặp. Hiển thị biến e
+        //
+        // Mã lệnh thực thi có thể như sau:
+        function display_array() {
+            let e = "<hr/>";
+            for (let i = 0; i < array.length; i++) {
+                e += "Element " + i + " = " + array[i] + "<br/>";
+            }
+            document.getElementById("result").innerHTML = e;
+        }
+    </script>
+</body>
+</html>

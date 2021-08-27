@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var myinfo = {
+    //     name : 'abc',
+    //     age : 18,
+    //     address: 114
+    //         };
+    // for (var key in myinfo) {
+    //     console.log(myinfo[key]);
+    // }
+    let students = ["Hùng", "Quang", "Khanh", "Lý", "Long"];
+    /**
+     * Duyệt mảng sử dụng for-in: mỗi phần tử khi duyệt là index của mảng
+     */
+    for (let index in students) {
+        document.writeln(students[index]);
+    }
+
+    document.writeln("<br>")
+    /**
+     * Duyệt mảng sử dụng for-of: Mỗi phần tử khi duyệt chính phần tử của mảng
+     */
+    for (let st of students) {
+        document.writeln(st);
+    }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

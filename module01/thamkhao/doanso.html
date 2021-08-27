@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+        padding:0;
+        margin: auto;
+    }
+    button{
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    input{
+        padding: 15px 32px;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+</style>
+<body>
+<h1>Game Xổ số</h1>
+<br>
+<p>Đoán số từ 1 đến 10. Bạn có <span id="count">3</span> lần đoán</p>
+<br>
+<input type="text" id="number">
+
+<button onclick="play()">Đoán!</button>
+
+<script>
+    let a = Math.floor(Math.random() * 10 + 1);
+    alert(result);
+    function guest() {
+        let count = document.getElementById("count").innerText;
+        let num = document.getElementById("number").value;
+        let count = document.getElementById("count").innerText = count - 1;
+        if(count == 0){
+            alert("Ra chỗ khác chơi!");
+            return;
+        }
+
+        if (num != result) {
+            alert("Wrong");
+            return;
+        } else {
+            alert("Đúng rồi bạn");
+            return;
+        }
+    }
+
+</script>
+</body>
+</html>
