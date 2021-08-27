@@ -1,4 +1,5 @@
-<!--Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.-->
+<!--Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên
+ và đảo ngược các phần tử trong mảng đó.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +8,23 @@
 </head>
 <body>
 <script>
-    let a = Array(3);
-    let max = 0;
-    let t=0;
+    let a = Array(10);
     for (let i=0; i<a.length; i++){
         a[i] = prompt('Nhap pan tu thu a[' + i+ ']');
     }
-    for (let i=0; i<a.length; i++){
-        t = a[a.length-1-i];
-        a[i] = t;
-        document.write(a[i]);
+    let first = 0;
+    let last = a.length-1;
+    while (first<last) {
+        let temp = a[first];
+        a[first] = a[last];
+        a[last] = temp;
+        first++;
+        last--;
     }
+    for ( let i = 0; i< a.length; i++) {
+        document.writeln(a[i])
+    }
+
     </script>
 </body>
 </html>

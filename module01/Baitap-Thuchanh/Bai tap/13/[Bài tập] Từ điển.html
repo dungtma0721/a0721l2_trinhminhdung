@@ -16,11 +16,22 @@ lưu trữ trong các mảng-->
     let anh = ["good", "bad", "ugly", "color"];
     let viet = ["tốt", "xấu", "tồi", "màu"];
 
-    function tra() {
-        let a = document.getElementById("nhap").value;
-        let n = anh.indexOf(a);
-        document.getElementById("kq").innerHTML = viet[n];
+    // function tra() { //dùng indexOf:
+    //     let a = document.getElementById("nhap").value;
+    //     let n = anh.indexOf(a);
+    //     document.getElementById("kq").innerHTML = viet[n];
+    // }
+
+function tra() { // dùng for:
+    let a = document.getElementById("nhap").value;
+    for ( let i=0; i< anh.length; i++) {
+        if (a === anh[i]) {
+            document.getElementById("kq").innerHTML = viet[i];
+            break;
+        }
     }
+    }
+
 </script>
 </body>
 </html>
