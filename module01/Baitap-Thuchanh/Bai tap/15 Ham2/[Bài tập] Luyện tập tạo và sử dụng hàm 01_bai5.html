@@ -1,0 +1,27 @@
+<!--Bài 4.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr1 = Array('Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus');
+    let arr2 = Array('Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo');
+    function tra(str) {
+        for ( let i=0; i< arr1.length; i++) {
+            if (str === arr1[i]) {
+                return  document.write('Chom sao tuong ung ' + arr1[i]+ ' la: ' + arr2[i]);
+                break;
+            }
+            else return document.write('Ko tim thay')
+        }
+    }
+    let str = prompt('Nhap ten ngoi sao');
+    tra(str);
+
+</script>
+</body>
+</html>
