@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Rectangle{
+    constructor(l, w) {
+        this.length=l;
+        this.width=w;
+        this.getlength=function () {
+            return this.length;
+        }
+        this.getwidth=function () {
+            return this.width;
+        }
+        this.getarea=function () {
+            return (this.getlength()*this.getwidth());
+        }
+        this.getperimeter=function () {
+            return (this.getlength()+this.getwidth())*2;
+        }
+    }
+}
+let R1=new Rectangle(5,3);
+let l1=R1.getlength();
+let w1=R1.getwidth();
+let s1=R1.getarea();
+let c1=R1.getperimeter();
+document.write('Dien tich= '+ s1);
+document.write('</br>');
+document.write('Chu vi= '+ c1);
+</script>
+
+</body>
+</html>

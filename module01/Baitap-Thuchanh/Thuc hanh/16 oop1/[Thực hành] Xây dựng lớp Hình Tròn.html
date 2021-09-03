@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let Circle = function(r) {
+    //
+    //     this.radius = r;
+    //
+    // };
+
+    class Circle {
+        constructor(r,mau) {
+            this.radius = r;
+            this.color= mau;
+            this.getRadius = function () {
+                return this.radius;
+            }
+            this.getArea = function () {
+                return Math.PI * this.getRadius() * this.getRadius();//Math.PI * r * r
+            };
+        }
+    };
+    let c1 = new Circle(2, 'red');
+    let r1 = c1.getRadius(); // 2
+
+    let a1 = c1.getArea(); // 12.566370614359172
+    alert("radius: " + r1 + "; area: " + a1);
+    //alert(c1);
+
+</script>
+</body>
+</html>
