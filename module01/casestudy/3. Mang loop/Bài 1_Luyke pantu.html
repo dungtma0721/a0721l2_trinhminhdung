@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let sum = 0;
+    let n = prompt('Nhap n');
+    for (let i=0; i<n; i++){
+        a[i]= parseInt(prompt('Nhap pan tu ' + i)) ;
+        document.writeln(a[i]);
+    }
+    document.writeln('</br>');
+        for (let i=0; i<n; i++){
+        sum+=a[i];
+        b[i]=sum;
+        document.writeln(b[i]);
+    }
+
+</script>
+</body>
+</html>

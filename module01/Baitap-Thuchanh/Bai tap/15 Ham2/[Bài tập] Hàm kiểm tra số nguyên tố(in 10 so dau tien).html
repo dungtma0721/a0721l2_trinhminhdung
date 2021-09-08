@@ -1,0 +1,58 @@
+<!--in 10so ddaafu tieen-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(n) {
+        let count = 0;
+        for (let i=1; i<=n; i++) {
+            if (n%i ==0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            return  true;
+        }
+        else return  false;
+    }
+
+    /**
+     * Chạy ra kq nhưg báo lỗi
+     */
+    // let countPrime=1;
+    // let run=1;
+    // while(countPrime<=10) {
+    //     if (isPrime(run)){
+    //         ++countPrime;
+    //         document.writeln(run);
+    //     };
+    //     run++;
+    // }
+
+    /**
+     * Code thầy Tiến.
+     */
+    let countPrime = 0;
+    let run = 1;
+    while (true) {
+        let count = 0;
+        // check prime number
+        // run = 1, 2, 3, 4, 5, 6...
+        if (isPrime(run)) {
+            console.log(run);
+            countPrime++;
+        }
+        // end check prime number
+        if (countPrime === 10) {
+            break;
+        }
+        run++;
+    }
+</script>
+
+</body>
+</html>

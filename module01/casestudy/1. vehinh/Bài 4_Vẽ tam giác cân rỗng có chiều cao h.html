@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=5;
+    for(let j=1; j<=n; j++){
+        for(let i=1; i<=n-j; i++) {
+            document.write('&nbsp&nbsp');
+        }
+        for(let i=1; i<=j; i++) {
+            document.write('x');
+        }
+        for(let i=1; i<=j-1; i++) {
+            document.write('x');
+        }
+        document.write('</br>');
+    }
+
+</script>
+
+</body>
+</html>
