@@ -6,20 +6,24 @@
 </head>
 <body>
 <script>
-    let n=5;
-    for(let j=1; j<=n; j++){
-        for(let i=1; i<=n-j; i++) {
+    let h = parseInt(prompt('Nhap chieu cao h'));
+    for(let j=1; j<=h; j++){
+        for(let i=1; i<=h-j; i++) {
             document.write('&nbsp&nbsp');
         }
         for(let i=1; i<=j; i++) {
-            document.write('x');
+            if (j===1||j===h||i===1){
+                document.write('x');
+            }
+            else document.write('&nbsp&nbsp');
         }
         for(let i=1; i<=j-1; i++) {
-            document.write('x');
+            if (j===1||j===h||i===j-1)
+                document.write('x');
+            else document.write('&nbsp&nbsp');
         }
         document.write('</br>');
     }
-
 </script>
 
 </body>

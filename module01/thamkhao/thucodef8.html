@@ -5,6 +5,33 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let i = 0, j = 0;
+    let arr1 = [];
+    let arr2 = [];
+    let n = parseInt(prompt('Nhap so pan tu mang 1'));
+    let m = parseInt(prompt('Nhap so pan tu mang 2'));
+    for (let i=0; i<n; i++){
+        arr1[i]= parseInt(prompt('Nhap pan tu mang 1 '));
+        document.write(arr1[i]);
+    }
+    document.write('</br>')
+    for (let i=0; i<m; i++){
+        arr2[i]= parseInt(prompt('Nhap pan tu mang 2 '));
+        document.write(arr2[i]);
+    }
+    document.write('</br>')
+    // arr1.sort(function(a, b){return a-b});
+    // arr2.sort(function(a, b){return a-b});
 
+    for(let i=0; i<arr1.length; i++){
+        for(let j=0; j<arr2.length; j++){
+            if (arr1[i] !== arr2[j]){
+                document.write(arr1[i]);
+            }
+        }
+    }
+
+</script>
 </body>
 </html>
