@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const normal = function(inStr){
+        let arrStr = inStr.split(" ");// tách chuỗi vào mảng theo khoảng trắng.
+        let result = "", tmp;
+        for (let i = 0; i < arrStr.length; i++) {
+            tmp = arrStr[i].trim().toLowerCase();// xoá khoảng trắng trước sau từ, chuyển về chữ thường.
+            if (tmp != ""){
+                tmp = tmp.substr(0,1).toUpperCase() + tmp.substr(1);
+                result += tmp + " ";
+            }
+        }
+        return result;
+    }
+    function main() {
+        let inStr = prompt("Nhập xâu kí tự bạn muốn chuẩn hóa");
+        console.log("Xâu nhập :" + inStr);
+        let outStr = normal(inStr);
+        console.log("Xâu sau khi chuẩn hóa :" + outStr);
+    }
+    main();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function maxFraction(numerators,denominators){
+        let cs = 0;
+        for (let i = 1; i < numerators.length; i++){
+            if (numerators[cs] * denominators[i] < numerators[i] * denominators[cs]) {
+                cs = i;
+            }
+        }
+        return cs;
+    }
+    numerators = [5, 2, 5];
+    denominators = [4, 3, 6];
+    console.log(maxFraction(numerators,denominators));
+</script>
+</body>
+</html>

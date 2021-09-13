@@ -1,0 +1,53 @@
+<!--CHƯA
+ ĐƯỢC-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>beverages</h3>
+<ol>
+    <li>cafe 10k</li>
+    <li>cam vắt 25k</li>
+    <li>nước ép cà rốt 20k</li>
+    <li>nước ép cà chua 15k</li>
+    <li>nước lọc 7k</li>
+    <li>nước dừa 30k</li>
+</ol>
+<script>
+    let drink = ['cafe' ,'cam vắt','nước ép cà rốt','nước ép cà chua','nước lọc','nước dừa'];
+    let yourOder;
+    do {
+        let inNum = prompt("MENU: 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát). Vui lòng nhập từ 1-7");
+        let yourOder = parseInt(inNum);
+        switch (yourOder) {
+            case 1:
+                alert('Ban da chon cafe');
+                break;
+            case 2:
+                alert('Ban da cho cam vat');
+                break;
+            case 3:
+                alert('Ban da chon nuoc ep ca rot');
+                break;
+            case 4:
+                alert('Ban da chon nuoc ep ca chua');
+                break;
+            case 5:
+                alert('Ban da chon nuoc loc');
+                break;
+            case 6:
+                alert('Ban da chon nuoc dua');
+                break;
+            case 7:
+                alert('Cam on ban da dat mon');
+                break;
+            default:
+                alert('Vui long nhan so tu 1 den 7');
+        }
+    } while (yourOder !==7);
+</script>
+</body>
+</html>

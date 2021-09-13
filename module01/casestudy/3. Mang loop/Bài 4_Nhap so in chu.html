@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let b = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+    let n= prompt('Nhập dãy sô');
+    // chuyen thành chuỗi/mảng;
+    console.log(n.toString());
+    console.log(n[0]);
+    for (let i=0; i< n.length; i++){
+        for (let j=0; j<a.length; j++){
+            if (n[i]===a[j]){
+                document.writeln(b[j]);
+            }
+        }
+    }
+</script>
+</body>
+</html>
