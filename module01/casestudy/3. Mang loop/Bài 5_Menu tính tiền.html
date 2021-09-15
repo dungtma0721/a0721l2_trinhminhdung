@@ -17,37 +17,41 @@
     <li>nước dừa 30k</li>
 </ol>
 <script>
-    let drink = ['cafe' ,'cam vắt','nước ép cà rốt','nước ép cà chua','nước lọc','nước dừa'];
-    let yourOder;
+    let menu = ['cafe' ,'cam vắt','nước ép cà rốt','nước ép cà chua','nước lọc','nước dừa'];
+    let price = [10,25,20,15,7,30]
+    let count=0;
     do {
-        let inNum = prompt("MENU: 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát). Vui lòng nhập từ 1-7");
-        let yourOder = parseInt(inNum);
+        let yourOder = parseInt(prompt("MENU: 1 (cafe), 2 (cam vắt), 3(nước ép cà rốt), 4(nước ép cà chua), 5(nước lọc), 6(nước dừa), 7(thoát). Vui lòng nhập từ 1-7"));
+        if(yourOder == 7) break;
+        let amount = parseInt(prompt(`Ban da chon ${menu[yourOder-1]} voi don gia la: ${price[yourOder-1]}, moi chon so luong:`))
         switch (yourOder) {
             case 1:
-                alert('Ban da chon cafe');
+                count += amount * price[yourOder-1];
                 break;
             case 2:
-                alert('Ban da cho cam vat');
+                count += amount * price[yourOder-1];
                 break;
             case 3:
-                alert('Ban da chon nuoc ep ca rot');
+                count += amount * price[yourOder-1];
                 break;
             case 4:
-                alert('Ban da chon nuoc ep ca chua');
+                count += amount * price[yourOder-1];
                 break;
             case 5:
-                alert('Ban da chon nuoc loc');
+                count += amount * price[yourOder-1];
                 break;
             case 6:
-                alert('Ban da chon nuoc dua');
+                count += amount * price[yourOder-1];
                 break;
-            case 7:
-                alert('Cam on ban da dat mon');
-                break;
-            default:
-                alert('Vui long nhan so tu 1 den 7');
+            // case 7:
+            //     alert('Cam on ban da dat mon');
+            //     break;
+            // default:
+            //     alert('Vui long nhan so tu 1 den 7');
+            //     break;
         }
-    } while (yourOder !==7);
+    } while (true)
+    alert('Tong tien ban dat la: ' + count);
 </script>
 </body>
 </html>

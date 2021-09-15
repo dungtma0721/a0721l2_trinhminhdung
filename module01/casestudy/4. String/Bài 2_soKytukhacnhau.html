@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = 'baacdab';
+    let m = s;
+    count = 0;
+    for (let i = 0; i<s.length; i++){
+        m= m.substr(1);
+        if (m.indexOf(s[i]) == -1) {
+            count +=1;
+        }
+    }
+    console.log(count);
+</script>
+</body>
+</html>
