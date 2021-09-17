@@ -2,16 +2,13 @@
 các phần tử trong một mảng và hiển thị chúng.-->
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset=utf-8 />
     <title>JS Bin</title>
-
     <style>
         body {padding-top:50px}
     </style>
 </head>
-
 <body>
     <input type="text" id="txtValue"/>
     <input type="button" id="btnAdd" value="them" onclick="add_element_to_array();"/>
@@ -23,7 +20,7 @@ các phần tử trong một mảng và hiển thị chúng.-->
         function add_element_to_array() {
             array[x] = document.getElementById("txtValue").value;
             alert("Element: " + array[x] + " Added at index " + x);
-            //x++;
+            x++;
             //document.getElementById("txtValue ").value = "";
         }
         // Bước 5: Xây dựng hàm display_array() để hiển thị các phần tử trong mảng
@@ -39,6 +36,7 @@ các phần tử trong một mảng và hiển thị chúng.-->
         //     Kết thúc lặp. Hiển thị biến e
         //
         // Mã lệnh thực thi có thể như sau:
+
         function display_array() {
             let e = "<hr/>";
             for (let i = 0; i < array.length; i++) {

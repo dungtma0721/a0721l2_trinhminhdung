@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    table {
+        width:50%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        height: 40px;
+        width: 40px;
+    }
+
+</style>
+<p id="result"></p>
+<script>
+    let arr = new Array(10);
+    for (let i=0; i < arr.length; ++i){
+        arr[i] = new Array(10);
+        for (let j=0; j < arr[i].length; ++j){
+            arr[i][j] = '';
+        }
+    }
+    display();
+
+    function display(){
+        let tablestring = '<table>';
+        for(let i=0; i<10; i++){
+            tablestring+= '<tr>';
+            for (let j=0; j<10; ++j){
+                tablestring+= '<td onclick="play(' +i+ ',' +j+ ')">'+ arr[i][j] +'</td>';
+            }
+            tablestring+= '</tr>';
+        }
+        tablestring+= '</table>';
+
+        document.getElementById('result').innerHTML=tablestring;
+    }
+
+    function play(i,j) {
+        arr[i][j]='x'
+        display();
+    }
+</script>
+</body>
+</html>

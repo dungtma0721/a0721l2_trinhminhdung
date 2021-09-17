@@ -1,0 +1,27 @@
+<!--Bài 5: Viết một chương trình nhập vào 2 chuỗi,
+sau đó kiểm tra xem hai chuỗi có giống nhau hay không..-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 'qwertyuiop';
+    let b = 'qwertyuiop';
+    let count=0;
+    for (let i = 0; i<a.length; ++i){
+        if (a[i]===b[i]){
+            count++;
+        }
+    }
+    if (count === a.length){
+        console.log('2 chuoi bang nhau')
+    }
+    else{
+        console.log('2 chuoi ko bang nhau')
+    }
+</script>
+</body>
+</html>
