@@ -1,0 +1,39 @@
+<!--http://www.javascripttutorial.net/javascript-pass-by-value/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function square(x) {
+        x = x * x;
+    }
+    let y = 10;
+    square(y);
+    console.log(y); // -- no change
+
+    function turnOn(machine) {
+        machine.isOn = true;
+    }
+    let computer = {
+        isOn: false
+    };
+    turnOn(computer);
+    console.log(computer.isOn); // true;
+
+    function turnOn(machine) {
+        machine = {
+            isOn: true
+        };
+    }
+    let computer = {
+        isOn: false
+    };
+    console.log(computer.isOn); // false;
+
+
+</script>
+</body>
+</html>

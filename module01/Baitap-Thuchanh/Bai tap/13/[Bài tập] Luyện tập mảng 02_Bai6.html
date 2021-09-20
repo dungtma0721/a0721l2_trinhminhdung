@@ -8,9 +8,31 @@ các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký t
 </head>
 <body>
 <script>
-    let s = 'plmnkoijb-ygv-tfc-';
-    s.replace('-', '_');
-    console.log(s);
+    let a = ['p','l','m','n','k','o','i','j','b','-','y','g','v','-','t','f','c','-']
+    let b =[];//tao mang moi de gan pt a[], rieng '-' thi gan '_'
+    for (let i=0; i< a.length; i++){
+        if (a[i] === '-'){
+            b.push('_');
+        }
+        else {
+            b.push(a[i]);
+        }
+    }
+    console.log(b.join(''));
+
+    /**
+     * //pa1
+     let arr= ['p','l','m','n','k','o','i','j','b','-','y','g','v','-','t','f','c','-']
+     let s = arr.join('');
+     function replace(){
+        //thu code voi chuoi
+        //let s = 'plmnkoijb-ygv-tfc-';
+        let s1 = s.replace(/-/g, '_');
+        console.log(s1);
+    }
+     replace();
+     *
+     */
 </script>
 </body>
 </html>

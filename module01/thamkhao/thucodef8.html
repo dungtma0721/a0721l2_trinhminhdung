@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    function turnOn(machine) {
+        machine.isOn = true;
+    }
+    let computer = {
+        isOn: false
+    };
+    turnOn(computer);
+    console.log(computer.isOn); // true;
+</script>
 </body>
 </html>

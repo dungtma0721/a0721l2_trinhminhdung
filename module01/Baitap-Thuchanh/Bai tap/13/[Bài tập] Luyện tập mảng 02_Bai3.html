@@ -7,6 +7,16 @@ Chương trình này đếm số ký tự số trong mảng.-->
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let a =  ['a',2.5,'s','34',2,'d','5','f','g','h','j','k','l','123'];
+    let count = 0;
+    for( let i=0 ;i < a.length; i++){
+        let number = parseInt(a[i]);
+        if(!isNaN(number)){
+            count++;
+        }
+    }
+    console.log(count);
+</script>
 </body>
 </html>

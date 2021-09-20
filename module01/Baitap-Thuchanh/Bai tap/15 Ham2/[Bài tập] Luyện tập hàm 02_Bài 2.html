@@ -1,0 +1,23 @@
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function dientichHinhTron(r) {
+        return PI*r*r;
+    }
+    function chuviHinhTron(r) {
+        return 2*PI*r;
+    }
+    const PI = 3.1415;
+    let inputBankinh = parseInt(prompt('Nhap ban kinh'));
+    console.log(dientichHinhTron(inputBankinh));
+    console.log(chuviHinhTron(inputBankinh));
+</script>
+
+</body>
+</html>

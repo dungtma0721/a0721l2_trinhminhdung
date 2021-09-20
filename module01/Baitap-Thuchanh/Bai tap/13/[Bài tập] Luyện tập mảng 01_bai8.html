@@ -1,0 +1,46 @@
+<!--Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên
+gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần
+ và hiển thị ra mảng đã được sắp xếp..-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /** TAO HAM CHUA DUOC
+     * function swap(a,b) {
+        let temp;
+        temp = a;
+        a = b;
+        b = temp;
+    }
+     let arr = [5,2,5,8,12,5,8,45,21,4,7,5];
+     let temp;
+     for (let i=0; i<arr.length; i++) {
+        for (let j=i+1; j<arr.length; j++) {
+            if (arr[i]>arr[j]) {
+                swap(arr[i],arr[j])
+            }
+        }
+    }
+     * @param a
+     * @param b
+     */
+
+    let arr = [5,2,5,8,12,5,8,45,21,4,7,5];
+    let temp;
+    for (let i=0; i<arr.length; i++) {
+        for (let j=i+1; j<arr.length; j++) {
+            if (arr[i]<arr[j]) {
+             temp=arr[i];
+             arr[i]=arr[j];
+             arr[j]=temp;
+            }
+        }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tham khao bài Thực hành Hàm (chuyen doi nhiet do)-->
+square<input type="text" id="input" oninput="calculate()">
+is: <span id="research"></span>
+<script>
+    function square(x) {
+        return x*x;
+    }
+    function calculate() {
+        let input= document.getElementById('input').value;
+        document.getElementById('research').innerHTML= square(input);
+    }
+</script>
+</body>
+</html>

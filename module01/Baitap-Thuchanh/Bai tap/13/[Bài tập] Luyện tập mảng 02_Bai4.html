@@ -1,0 +1,23 @@
+<!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = '            trA van tan A     ';
+    let s1= s.trim(); //xoá khoảng trống đầu cuối.
+    console.log(s1);
+    // đếm số lượng ký tự ' '
+    let count=1;
+    for (let i=0; i< s1.length; i++){
+        if (s1[i]===' '){
+            count++;
+        }
+    }
+    console.log(' So luong tu trong chuoi la: '+ count + 'tu');
+</script>
+</body>
+</html>
