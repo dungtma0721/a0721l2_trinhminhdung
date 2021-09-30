@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let teachers = [
+        ["TrungDP", 920347324, 33, "trung.doan@codegym.vn", "Đà Nẵng"],
+        ["ChanhTV", 988374642, 34, "chanh.tran@codegym.vn", "Đà Nẵng"],
+        ["VietTH", 929384732, 23, "viet.tran@codegym.vn", "Quảng Nam"]
+    ]
+
+    // alert("Email của GV Chánh là: " + teachers[1][3])
+    document.writeln("<br>");
+    for (let teacher of teachers){
+        for (let infor of teacher){
+            document.writeln(infor);
+        }
+        document.writeln("<br>");
+    }
+
+    /**
+     * sử dụng for
+     */
+    for (let i=0; i<teachers.length; ++i){
+        for (let j = 0; j<teachers[i].length; ++j){
+            document.writeln(teachers[i][j]);
+
+        }
+        document.writeln("<br>");
+    }
+
+    /**
+     * sử dụng foreach()
+     */
+    let numbers2 = [1, 3, 5, 6, 11, 33, 4, 55];
+    numbers2.forEach((a) => {
+        console.log(a);
+    })
+</script>
+
+</body>
+</html>

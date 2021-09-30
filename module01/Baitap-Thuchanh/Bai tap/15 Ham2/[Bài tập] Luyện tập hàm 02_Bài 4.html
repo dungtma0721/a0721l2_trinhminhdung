@@ -8,16 +8,23 @@
 </head>
 <body>
 <script>
-    // function checkNum(c) {
-    //
-    // }
-    // let input = parseInt(prompt('Nhap n'));
-    // checkNum(c);
-    console.log(typeof 'd')
+    function checkNum(c) {
+        if (!isNaN(c)) {
+            return true;
+        }
+        else return false;
+    }
+    let input = prompt('Nhap n');
+    if (checkNum(input)){
+        console.log(' c laf number');
+    }
+    else console.log(' c ko la number');
 
-
+    /**
+     *
+     */
+    console.log(typeof input)
 
 </script>
-
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì,
+ thực hiện đổi chỗ hai số nguyên đó..-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     *function swap(a,b) {
+        let temp;
+        temp = a;
+        a = b;
+        b = temp;
+        console.log(a,b);// ????????
+    }
+     let a = parseInt(prompt('Nhap so nguyen a'));
+     let b = parseInt(prompt('Nhap so nguyen b'));
+     console.log(a,b);
+     swap(a,b);
+     * @param a
+     * @param b
+     */
+
+    /**
+     *
+     */
+    function swap(arr, a, b) {
+        let temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+        //return arr;
+    }
+    let a = parseInt(prompt('Nhap so nguyen a'));
+    let b = parseInt(prompt('Nhap so nguyen b'));
+    let ar = [];
+    ar[0]=a;
+    ar[1]=b;
+    swap(ar,0,1);
+    console.log(ar);
+
+</script>
+</body>
+</html>

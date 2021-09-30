@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Xây dựng chương trình sử dụng đệ quy để kiểm tra một từ có phải là từ đối xứng không.
+    // Phương thức kiểm tra chuỗi đối xứng có nguyên mẫu như sau:
+    let string = prompt("Nhập vô chuỗi kiểm tra");
+    // 1 2 3 4 3 2 1
+
+    function isPalindrome(start, end, string){
+        if (start >= end){
+            return true;
+        }
+        if (string[start] !== string[end]){
+            return false;
+        }
+        return isPalindrome(start + 1, end - 1, string);
+    }
+    alert(isPalindrome(0,string.length - 1,string));
+
+
+    // 1 2 3 4 3 2 1
+    // function isPalindrome(string){
+    //     for (let i = 0; i < string.length / 2; i++){
+    //         if (string[i] !== string[string.length-1-i]){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+    // alert(isPalindrome(string));
+    /**
+     * function isPalindrome(string){
+        // 12321
+        var array = string.split("");
+        //[1,2,3,2,2] reverse [2,2,3,2,1]
+        for (let i = 0; i < array.length / 2; i++){ //2
+            if (array[i] !== array.reverse()[i]){ //2 ?== //2
+                return false;
+            }
+        }
+        return true;
+    }
+     alert(isPalindrome(string));
+     * @param string
+     * @returns {boolean}-----------------------------------------------------------
+     */
+
+    /**
+     *let str = "reder";
+     function isPalindrome(str) {
+        let count = 0;
+       let first = 0;
+       let last = a.length - 1;
+       while (first < last) {
+           if(str[first] == str[last]){
+               count++;
+           }
+           first++;
+           last--;
+       }
+
+       if(Math.floor(str.length/2) == count) return true;
+       else return false;
+
+    }
+     console.log(isPalindrome(str));
+     */
+
+    /**
+     * function isPalindrome(str) {
+        let first = 0;
+        let last = str.length - 1;
+        if (first == last) return true;
+        if (str[first] === str[last]) {
+            let s = str.slice(first + 1, last);
+            return isPalindrome(s);
+        }
+        else return false;
+    }
+     let chuoi = "rotor";//redder, motor
+     let str = chuoi.split('');
+     console.log(isPalindrome(str));
+     * @param str
+     * @returns {boolean}
+     */
+
+</script>
+</body>
+</html>

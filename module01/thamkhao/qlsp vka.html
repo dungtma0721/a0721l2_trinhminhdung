@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    table tr td {
+        border: #4267b2 1px solid;
+    }
+</style>
+<h1>Danh sách sp</h1>
+<!--<button onclick="showAllProduct()">show</button>-->
+<input type="text" id="newP" placeholder="new">
+<button onclick="createNewProduct()">create</button>
+
+<table>
+    <tr>
+        <td>Tên SP</td>
+        <td>Sửa</td>
+        <td>Xoá</td>
+    </tr>
+    <tbody id="products">
+        <tr>
+            <td>Apple</td>
+            <td>Sửa</td>
+            <td><button onclick="deleteProduct()">Xoá</button></td>
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td>Sửa</td>
+            <td>Xoá</td>
+        </tr>
+    </tbody>
+
+</table>
+<script>
+    let productList = ["Apple", "Samsung", "Xiaomi"];
+    //tham so: 0;
+    //tra ve: 0;
+    //chuc nang: lap ds, dien vao the cos id(products);
+    function showAllProduct(){
+        let content='';
+        for (let i = 0; i <productList.length ; i++) {
+            content+='<tr>\n' +
+                '            <td>'+productList[i]+'</td>\n' +
+                '            <td><button onclick="editProduct('+i+')">Sửa</button></td>\n' +
+                '            <td><button onclick="deleteProduct('+i+')">Xoá</button></td>\n' +
+                '        </tr>'
+        }
+        document.getElementById('products').innerHTML=content;
+    }
+    showAllProduct();
+
+    function createNewProduct() {
+        //let newP = prompt('Moi ban nhap');
+        let newP= document.getElementById('newP').value;
+        if(newP===''){
+            alert("Vui long dien ten san pham");
+        }
+        else {
+            productList.push(newP);
+        }
+        showAllProduct();
+        document.getElementById('newP').value ='';
+    }
+    function deleteProduct(index) {
+        if (confirm("Chac chan muon xoa san pham "+ productList[index] + " ra khoi danh sach san pham?")){
+            productList.splice(index, 1);
+        }
+        showAllProduct()
+    }
+    function editProduct(index) {
+        let newValue= prompt('Nhap vao sp moi', productList[index]);
+        productList[index]= newValue;
+        showAllProduct();
+    }
+</script>
+</body>
+</html>

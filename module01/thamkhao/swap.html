@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    // function swap(a,b){
+    //     let temp = a;
+    //     a = b;
+    //     b = temp;
+    //     console.log(a,b);
+    // }
+    // swap(2,3);
+
+    function swap(arr, a, b) {
+        let temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+    let ar = [1,5];
+    swap(ar,0,1);
+    console.log(ar);
+</script>
+</body>
+</html>

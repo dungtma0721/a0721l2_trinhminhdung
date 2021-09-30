@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let n = prompt('Nhap n');
+    let sum =0;
+    let count=0;
+    for (let i=0; i<n; i++){
+        a[i]= parseInt(prompt('Nhap pan tu ' + i)) ;
+        document.writeln(a[i]);
+    }
+    for (let i=0; i<a.length; i+=2){
+        if ( a[i]%2 !== 0){
+            sum+= a[i];
+            count++;
+        }
+    }
+    tbcong = sum/count;
+    document.write('Trung binh cong cac so nguyen le o vi tri chan trong mang la: '+ tbcong);
+</script>
+
+</body>
+</html>
