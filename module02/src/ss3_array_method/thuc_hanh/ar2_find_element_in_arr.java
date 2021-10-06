@@ -2,7 +2,7 @@ package ss3_array_method.thuc_hanh;
 
 import java.util.Scanner;
 
-public class find_element_in_arr {
+public class ar2_find_element_in_arr {
     public static void main(String[] args) {
         String[] students = {"Christian", "Michael", "Camila", "Sienna", "Tanya",
                 "Connor", "Zachariah", "Mallory", "Zoe", "Emily","Zoe",};

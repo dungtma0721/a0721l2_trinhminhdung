@@ -9,18 +9,20 @@ public class nPrime {
         int n = input.nextInt();
         int countP = 0;
         int N = 2;
-        int count = 0;
-        while (countP < n) {
+        while (countP<n) {
+            int count = 0;// khai bao trong while
             for (int i = 1; i <=N; i++) { //check prime
                 if (N % i == 0){
                     count++;
                 }
             }
             if (count == 2){
-                System.out.print(N);
+                System.out.println(N);
                 countP++;
             }
-            if (countP==n) break;
+//            if (countP==n){
+//                break;
+//            }
             N++;
         }
     }

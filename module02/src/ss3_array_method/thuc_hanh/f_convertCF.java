@@ -1,6 +1,6 @@
 package ss3_array_method.thuc_hanh;
 import java.util.Scanner;
-public class convertCF {
+public class f_convertCF {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double fahrenheit;
