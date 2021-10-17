@@ -1,4 +1,4 @@
-package ss4_class_object.bai_tap;
+package ss4_class_object.bai_tap.stopwatch;
 
 public class StopWatch {
     //Trường startTime và endTime là private với phương thức
@@ -8,24 +8,30 @@ public class StopWatch {
     //stop() để thiết đặt endTime về thời gian hiện tại của hệ thống
     //getElapsedTime() trả về thời gian đã trôi qua theo số milisecond giây
 
-    private int startTime;
-    private int endTime;
+    private long startTime;
+    private long endTime;
 
     public StopWatch() {
     }
 
-    public int getStartTime() {
+    public long getStartTime() {
         return startTime;
     }
 
-    public int getEndTime() {
+    public long getEndTime() {
         return endTime;
     }
 
     public void start() {
+        startTime = System.currentTimeMillis();
     }
 
     public void stop() {
+        endTime = System.currentTimeMillis();
+    }
+    //getElapsedTime
+    public long getElapsedTime(){
+        return endTime-startTime;
     }
 
 
