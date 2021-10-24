@@ -1,5 +1,7 @@
 package demo_manager_student.model;
 
+import java.util.Objects;
+
 public class Student extends Person{
     private int point;
     private String subject;
@@ -7,8 +9,13 @@ public class Student extends Person{
     public Student() {
     }
 
-    public Student(int id, String name, String address, int point, String subject) {
-        super(id, name, address);
+    public Student(int point, String subject) {
+        this.point = point;
+        this.subject = subject;
+    }
+
+    public Student(int id, String name, int age, String address, int point, String subject) {
+        super(id, name, age, address);
         this.point = point;
         this.subject = subject;
     }
@@ -34,9 +41,29 @@ public class Student extends Person{
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", age=" + age +
                 ", address='" + address + '\'' +
                 ", point=" + point +
                 ", subject='" + subject + '\'' +
                 '}';
+    }
+
+    @Override
+    public void goToBy() {
+
+    }
+    public void study(){
+        System.out.println("sinh viên đang học");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+
+        return ((Student)o).getName().equals(this.getName())&&((Student)o).getId()==(this.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return 12;
     }
 }

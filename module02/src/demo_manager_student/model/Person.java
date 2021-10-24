@@ -1,16 +1,18 @@
 package demo_manager_student.model;
 
-public class Person {
+public abstract class Person {
     protected int id;
     protected String name;
+    protected int age;
     protected String address;
 
     public Person() {
     }
 
-    public Person(int id, String name, String address) {
+    public Person(int id, String name, int age, String address) {
         this.id = id;
         this.name = name;
+        this.age = age;
         this.address = address;
     }
 
@@ -30,6 +32,14 @@ public class Person {
         this.name = name;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -43,7 +53,9 @@ public class Person {
         return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", age=" + age +
                 ", address='" + address + '\'' +
                 '}';
     }
+    public abstract void goToBy();
 }

@@ -137,6 +137,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 3:
                     System.out.print("thirdty ");
                     switch (x){
@@ -168,6 +169,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 4:
                     System.out.print("fourty ");
                     switch (x){
@@ -199,6 +201,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 5:
                     System.out.print("fifty ");
                     switch (x){
@@ -230,6 +233,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 6:
                     System.out.print("sixty ");
                     switch (x){
@@ -261,6 +265,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 7:
                     System.out.print("seventy ");
                     switch (x){
@@ -292,6 +297,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 8:
                     System.out.print("eighty ");
                     switch (x){
@@ -323,6 +329,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
                 case 9:
                     System.out.print("ninety ");
                     switch (x){
@@ -354,6 +361,7 @@ public class readNum {
                             System.out.println("nine");
                             break;
                     }
+                    break;
             }
         }
     }

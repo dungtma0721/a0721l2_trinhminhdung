@@ -5,7 +5,11 @@ import demo_manager_student.service.StudentService;
 import java.util.Scanner;
 
 public class Main {
-    private static StudentService studentService=new StudentService();
+
+    //private static StudentService studentService = new StudentService(); // chua hieu
+    //static StudentService studentService = new StudentService(); // chua hieu
+    private static StudentService studentService = new StudentService(); // chua hieu
+
     public static void main(String[] args) {
         boolean flag =true;
         do {
@@ -19,13 +23,14 @@ public class Main {
             int chooseMenu = scanner.nextInt();
             switch (chooseMenu){
                 case 1:
-                    //studentService.add();
+                    System.out.println("Chuc nang them moi");
+                    studentService.add();
                     //studentService.
                     //code
                     break;
                 case 2:
                     //code
-                    //studentService.display();
+                    studentService.display();
                     break;
                 case 3:
                     System.out.println("chức năng update");
@@ -33,7 +38,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("chức năng delete");
-                    //studentService.delete();
+                    studentService.delete();
                     break;
                 default:
                     flag=false;
