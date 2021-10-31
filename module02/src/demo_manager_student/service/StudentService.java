@@ -9,17 +9,20 @@ import java.util.Scanner;
 public class StudentService implements IService {
     private Scanner scanner = new Scanner(System.in);
     //public static Student[] studentList = new Student[10];
+
     public static LinkedList<Student> studentList = new LinkedList<>();
-    static {
-        studentList.add(new Student(1,"chanh1",23,"DN",5,"Toán"));
-        studentList.add(new Student(2,"chanh2",23,"DN",5,"Toán"));
-        studentList.add(new Student(3,"chanh3",23,"DN",5,"Toán"));
-        studentList.add(new Student(4,"chanh4",23,"DN",5,"Toán"));
-        studentList.add(1,new Student(5,"chanh4",23,"DN",5,"Toán"));
+
+    //static {
+      //  studentList.add(new Student(1,"chanh1",23,"DN",5,"Toán"));
+        //studentList.add(new Student(2,"chanh2",23,"DN",5,"Toán"));
+        //studentList.add(new Student(3,"chanh3",23,"DN",5,"Toán"));
+        //studentList.add(new Student(4,"chanh4",23,"DN",5,"Toán"));
+        //studentList.add(1,new Student(5,"chanh4",23,"DN",5,"Toán"));
 //        studentList[0]=new Student(1,"chanh1",23,"DN",5,"Toán");
 //        studentList[1]=new Student(2,"chanh2",23,"DN",6,"Văn");
 //        studentList[2]=new Student(3,"chanh3",23,"DN",7,"Anh");
-    }
+    //}
+
     // them, sưa, xóa, hien thi thông tin student
     @Override
     public void add(){

@@ -1,0 +1,62 @@
+package demo_subkey_lt.stack;
+// Java program to implement
+// the above approach
+// Structure of stack
+public class Stack {
+    // Stores maximum count of
+    // elements stored in a stack
+    int size;
+    // Stores index of top
+    // element of a stack
+    int top;
+    // Stores address of
+    // array element
+    int[] a;
+    // Function to check if
+    // the stack is empty or not
+    boolean isEmpty()
+    {
+        return (top < 0);
+    }
+    // Function to Initialize
+    // a stack of given capacity.
+    Stack(int n)
+    {
+        top = -1;
+        size = n;
+        a = new int[size];
+    }
+    // Function to push
+    // an element into Stack
+    boolean push(int x)
+    {
+        // If Stack is full
+        if (top >= size) {
+            System.out.println(
+                    "Stack Overflow");
+            return false;
+        }
+        else {
+            // Insert element
+            // into stack
+            a[++top] = x;
+            return true;
+        }
+    }
+    // Function to remove an element
+    // from stack.
+    int pop()
+    {
+        // If stack is empty
+        if (top < 0) {
+            System.out.println(
+                    "Stack Underflow");
+            return 0;
+        }
+        // Pop element from stack
+        else {
+            int x = a[top--];
+            return x;
+        }
+    }
+}

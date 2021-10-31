@@ -1,7 +1,6 @@
 package ss7_Abstract_Interface.thuc_hanh.interface_Comparable;
 
-public class ComparableCircle extends Circle
-        implements Comparable<ComparableCircle>{
+public class ComparableCircle extends Circle implements Comparable<ComparableCircle>{
 
     public ComparableCircle(double radius) {
         super(radius);
