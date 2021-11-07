@@ -11,10 +11,12 @@ public class Main {
         do {
             System.out.println("Chọn chức năng cần thực hiên" +
                     "\n1.add" +
-                    "\n2.display" +
-                    "\n3.edit" +
-                    "\n4.delete"+
-                    "\n5.Exit");
+                    "\n2.edit" +
+                    "\n3.delete" +
+                    "\n4.display"+
+                    "\n5.search"+
+                    "\n6.sort"+
+                    "\n7.Exit");
             //Scanner scanner = new Scanner(System.in);
             int chooseMenu = scanner.nextInt();
             switch (chooseMenu){
@@ -25,16 +27,30 @@ public class Main {
                     //code
                     break;
                 case 2:
+                    System.out.println("Chuc nang sua");
+                    //productManager.edit();
+                    //studentService.
+                    //code
+                    break;
+                case 3:
+                    System.out.println("Chuc nang xoa");
+                    //productManager.delete();
+                    //studentService.
+                    //code
+                    break;
+
+                case 4:
                     //code
                     productManager.display();
                     break;
-                case 3:
-                    System.out.println("chức năng update");
+                case 5:
+                    System.out.println("chức năng search");
                     //code
+                    productManager.search();
                     break;
-                case 4:
-                    System.out.println("chức năng delete");
-                    //productManager.delete();
+                case 6:
+                    System.out.println("chức năng sap xep");
+                    //productManager.sort();
                     break;
                 default:
                     flag=false;

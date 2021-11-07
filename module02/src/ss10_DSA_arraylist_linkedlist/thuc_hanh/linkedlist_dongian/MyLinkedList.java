@@ -11,6 +11,19 @@ public class MyLinkedList<T> {
         head = new Node(element);
     }
 
+    private class Node {
+        private Object data;
+        private Node next;
+
+        public Node(Object data) {
+            this.data = data;
+        }
+
+        public Object getData() {
+            return this.data;
+        }
+    }
+
     public void add(int index, T element) {
         Node temp = head;
 
@@ -51,16 +64,5 @@ public class MyLinkedList<T> {
         return numNodes;
     }
 
-    private class Node {
-        private Object data;
-        private Node next;
 
-        public Node(Object data) {
-            this.data = data;
-        }
-
-        public Object getData() {
-            return this.data;
-        }
-    }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ProductRepository {
     private static List<Product> productList;
-    static {
+    static { // CONSTRUCTOR ??
         productList = new ArrayList<>();
     }
 
