@@ -1,6 +1,7 @@
 package demo_chanhtran.ss5_static_ac.demo2;
 
-import ss5_static_ac.demo1.Student;
+import demo_chanhtran.ss5_static_ac.demo1.Student;
+
 
 public class Test2 {
     public static void main(String[] args) {

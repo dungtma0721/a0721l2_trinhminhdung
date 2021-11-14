@@ -2,7 +2,7 @@ package ss4_class_object.thuc_hanh.lecture;
 
 public class TestSimpleCircle {
     /**
-     * Main method
+     * ReadFile_Array_byte method
      */
     public static void main(String[] args) {
         SimpleCircle circle1 = new SimpleCircle();
